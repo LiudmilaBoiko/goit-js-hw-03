@@ -1,27 +1,21 @@
-let message = '';
+let message = "";
 const user = {
-    age: 20,
-    hobby: 'html',
-    name: 'Mango',
-    premium: true,
+  age: 20,
+  hobby: "html",
+  name: "Mango",
+  premium: true,
 };
 
-//Write code under this line  
-user.mood = 'happy',
-    user.hobby = 'skydiving',
-    user.premium = 'false',
-    user.fulltime = 'true',
-
+//Write code under this line
+user.mood = "happy";
+user["full time"] = true;
+user.hobby = "skydiving";
+user.premium = false;
 
 const keys = Object.keys(user);
 // Write code under this line
-console.log(keys);
-
 for (const key of keys) {
-    console.log(key);
-    console.log(feedback[key]);
-
-    message = user[key];
+  message += `${key}: ${user[key]}\n`;
 }
 
 console.log(message);
